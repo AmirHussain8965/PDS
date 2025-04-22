@@ -9,6 +9,7 @@
     --font-montserrat: "Montserrat", sans-serif;
     --font-roboto: "Roboto Mono", monospace;
     --font-Poppins: "Poppins", sans-serif;
+    --bg-image: url(../../assets/img/img.svg);
 }
 body {
     margin: 0;
@@ -38,6 +39,12 @@ button{
 }
 .hero_section{
     margin-top: 55px;
+    background-image: var(--bg-image);
+    height: calc(100vh - 55px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
 }
 .hero_section .carousel-item img{
     width: 100%;
