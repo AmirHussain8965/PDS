@@ -27,6 +27,10 @@ body {
 .navbar-brand{
     color: var(--text2-color);
 }
+.navbar-toggler{
+    border: none;
+    box-shadow: none !important;
+}
 .hero_section{
     margin-top: 55px;
 }
@@ -43,8 +47,8 @@ body {
     margin: auto;
 }
 .home_sec1_text_div h2{
-    font-weight: 400;
-    font-size: 48px;
+    font-weight: 500;
+    font-size: 42px;
     line-height: 72px;
     letter-spacing: -1.5%;
     text-align: center;
@@ -67,9 +71,9 @@ body {
     padding: 60px 0px;
 }
 .footer_text1 h3{
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
     letter-spacing: -1.5%;
     color: var(--text3-color);
     margin-bottom: 20px;
@@ -83,9 +87,9 @@ body {
     color: var(--text-color);
 }
 .footer_text2 h3{
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
     letter-spacing: -1.5%;
     color: var(--text3-color);
     margin-bottom: 20px;
@@ -108,12 +112,19 @@ body {
     color: var(--text3-color);
 }
 .footer_contact_form h3{
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
     letter-spacing: -1.5%;
     color: var(--text3-color);
     margin-bottom: 20px;
+}
+.footer_contact_form h5{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: -1.5%;
+    color: var(--text3-color);
 }
 .footer_contact_form input{
     border: 1px solid #00000080;
@@ -151,6 +162,7 @@ body {
 }
 .bottom_footer_txt1{
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
 }
 .bottom_footer_txt1 a{
@@ -240,7 +252,7 @@ body {
     margin-top: 40px;
 }
 .finance_title h2{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 36px;
     line-height: 50px;
 }
@@ -341,4 +353,222 @@ body {
 }
 .Vdetails_section_one{
     margin-top: 120px;
+    margin-bottom: 60px;
+}
+.Vdetails_swiper_main .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper_card_body{
+    width: 100%;
+}
+.swiper_card_body img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.swiper-button-next, .swiper-button-prev{
+    background-color: var(--secondary-color);
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 16px;
+    color: var(--text2-color);
+}
+.Vdetails_text_div h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--text-color);
+}
+.Vdetails_text_div p{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    color: var(--text-color);
+}
+.Vdetails_text_div ul{
+    padding-left: 0;
+}
+.Vdetails_text_div ul li{
+    padding-top: 5px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.Vdetails_text_div ul li span{
+    display: block;
+    min-width: 130px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -1.5%;
+    color: var(--text3-color);
+}
+.vehicle_detail_bottom_txt1{
+    margin-top: 30px;
+}
+.vehicle_detail_bottom_txt1 h5{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    color: var(--text-color);
+}
+.vehicle_detail_bottom_txt1 p{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: -1.5%;
+    color: var(--text3-color);
+}
+.vehicle_detail_bottom_txt2{
+    margin-top: 30px;
+}
+.vehicle_detail_bottom_txt2 h5{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    color: var(--text-color);
+}
+.vehicle_detail_bottom_txt2 ul{
+    margin-top: 12px;
+}
+.vehicle_detail_bottom_txt2 ul li{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -1.5%;
+    color: var(--text3-color);
+}
+@media (max-width:992px){
+    .hero_section .carousel-item img {
+        width: 100%;
+        height: calc(100vh - 155px);
+    }
+    .Header_section .navbar-nav{
+        padding-top: 20px;
+    }
+}
+@media (max-width:576px){
+    .hero_section .carousel-item img {
+        width: 100%;
+        height: calc(100vh - 255px);
+    }
+    .inven_sec1_card_body_div{
+        padding: 40px 10px;
+    }
+    .inven_sec1_card_txt h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: unset;
+        padding-top: 5px;
+    }
+    .inven_sec1_card_txt p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: unset;
+        color: var(--text-color);
+    }
+    .Vdetails_text_div h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: unset;
+        padding-top: 5px;
+    }
+    .Vdetails_text_div p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: unset;
+        color: var(--text-color);
+    }
+    .swiper_card_body img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .finance_title h2 {
+        font-size: 26px;
+        line-height: unset;
+    }
+    .finance_title h4 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: unset;
+    }
+    .contact_img img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .contact_right_main{
+        padding: 30px 0px;
+    }
+    .home_sec1_text_div h2 {
+        font-size: 36px;
+        line-height: unset;
+    }
+    .footer_text1{
+        margin-top: 30px;
+    }
+    .footer_text1 h3{
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: unset;
+    }
+    .footer_text2{
+        margin-top: 30px;
+    }
+    .footer_text2 h3{
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: unset;
+    }
+    .footer_contact_form{
+        margin-top: 10px;
+    }
+    .footer_contact_form h3{
+        font-size: 24px;
+        line-height: unset;
+        margin-bottom: 0;
+    }
+    .bottom_footer_txt2{
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+@media (max-width:420px){
+    .contact_img img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .swiper_card_body img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .home_sec1_text_div h2 {
+        font-size: 28px;
+        line-height: unset;
+    }
+    .home_sec1_text_div p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: unset;
+        text-align: justify;
+    }
 }
