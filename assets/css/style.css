@@ -9,7 +9,7 @@
     --font-montserrat: "Montserrat", sans-serif;
     --font-roboto: "Roboto Mono", monospace;
     --font-Poppins: "Poppins", sans-serif;
-    --bg-image: url(../../assets/img/img.svg);
+    --bg-image: url(../../assets/img/header\ image\ 1.png);
 }
 body {
     margin: 0;
@@ -20,7 +20,7 @@ button{
     color: #FFFFFF;
 }
 .Header_section{
-    background-color: var(--primary-color);
+    background: linear-gradient(264.67deg, #0D7ECA -7.95%, #18A0FB 99.33%);
     position: fixed;
     top: 0;
     right: 0;
@@ -28,10 +28,10 @@ button{
     z-index: 999;
 }
 .Header_section ul li a{
-    color: var(--text-color) !important;
+    color: #FFFFFF !important;
 }
 .navbar-brand{
-    color: var(--text-color);
+    color: #FFFFFF !important;
 }
 .navbar-toggler{
     border: none;
@@ -123,6 +123,11 @@ button{
     letter-spacing: -1.5%;
     color: var(--text-color);
 }
+.contact_form_diff{
+    /* border: 2px solid #18A0FB; */
+    margin-top: 20px;
+    border-radius: 8px;
+}
 .footer_contact_form h3{
     font-weight: 500;
     font-size: 32px;
@@ -138,21 +143,29 @@ button{
     letter-spacing: -1.5%;
     color: var(--text-color);
 }
+.footer_contact_form h4{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 50px;
+    color: #000000CC;
+}
 .footer_contact_form input{
-    border: 1px solid #00000080;
-    color: var(--text-color);
+    border: 1px solid #D4D4D4;
+    color: #A7A7A7;
     padding: 8px;
     border-radius: 4px;
     width: 100%;
     margin-top: 15px;
+    outline: none;
 }
 .footer_contact_form textarea{
-    border: 1px solid #00000080;
-    color: var(--text-color);
+    border: 1px solid #D4D4D4;
+    color: #A7A7A7;
     padding: 8px;
     border-radius: 4px;
     width: 100%;
     margin-top: 15px;
+    outline: none;
 }
 .footer_contact_btn button{
     padding: 8px;
@@ -282,6 +295,7 @@ button{
     padding: 8px;
     border-radius: 4px;
     width: 100%;
+    outline: none;
 }
 .finance_input_div select{
     border: 1px solid #00000080;
@@ -289,7 +303,7 @@ button{
     padding: 8px;
     border-radius: 4px;
     width: 100%;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 .finance_btns{
     margin-top: 60px;
@@ -324,7 +338,7 @@ button{
 }
 .contact_img img{
     width: 100%;
-    height: 550px;
+    height: 500px;
     object-fit: cover;
 }
 .contact_right_main{
@@ -364,13 +378,75 @@ button{
     margin-top: 120px;
     margin-bottom: 60px;
 }
+.Vdetails_swiper_main .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Vdetails_swiper_main{
+    position: relative;
+}
 .Vdetails_swiper_main .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+    background-size: cover;
+    background-position: center;
+}
+.Vdetails_swiper_main .mySwiper2 {
+    height: 100%;
+    width: 100%;
+    position: unset;
+}
+.Vdetails_swiper_main .mySwiper2 .swiper-wrapper{
+    position: unset;
+}
+.mySwiper2 .swiper-slide img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+.Vdetails_swiper_main .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.Vdetails_swiper_main .mySwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.Vdetails_tags{
     display: flex;
-    justify-content: center;
+    gap: 10px;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+.Vdetails_tags button{
+    color: #1E1E1E;
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 12px;
+    padding: 6px 8px;
+    min-width: 0;
+    border-radius: 4px;
+}
+.Vdetails_tags button.tag1{
+    border: 1.09px solid #0E8A74;
+    background: #0E8A7417;
+
+}
+.Vdetails_tags button.tag2{
+    border: 1.09px solid #7A5FEE;
+    background: #DBD7EF4D;
+}
+.Vdetails_tags button.tag3{
+    border: 1.09px solid #EF8121;
+    background: #EF812126;
+}
+.Vdetails_tags button.tag4{
+    border: 1.09px solid #EE65E9;
+    background: #EE65E917;
 }
 .swiper_card_body{
     width: 100%;
@@ -380,20 +456,34 @@ button{
     height: 600px;
     object-fit: cover;
 }
-.swiper-button-next, .swiper-button-prev{
-    background-color: var(--secondary-color);
-    height: 30px;
-    width: 30px;
-    min-width: 30px;
+.Vdetails_swiper_main .swiper-button-next, .swiper-button-prev{
+    height: 50px;
+    width: 50px;
+    min-width: 25px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 2px;
+    background-repeat: no-repeat;
+    border: 1px solid #E9ECEF;
+    top: unset;
+    bottom: 60px;
+}
+.Vdetails_swiper_main .swiper-button-next:after{
+    transform: rotate(0deg);
+    margin-right: -3px;
 }
 .swiper-button-next:after, .swiper-button-prev:after{
-    font-size: 16px;
+    font-size: 0px;
     color: #FFFFFF;
+    background-image: url(../../assets/img/chevron.svg);
+    filter: brightness(5.5);
+    height: 27px;
+    width: 17px;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    margin-right: 5px;
 }
 .Vdetails_text_div h3{
     font-weight: 700;
@@ -426,21 +516,55 @@ button{
     letter-spacing: -1.5%;
     color: var(--text-color);
 }
+.Vdetails_text_div .Request_Information{
+    padding: 10px;
+    min-width: 160px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+.modal_contact_btn{
+    display: flex;
+    justify-content: end;
+}
+.vehicle_modal .modal-body{
+    padding: 20px 25px 40px 25px;
+}
+.vehicle_modal .modal-header{
+    border: none;
+}
+.modal_contact_btn button{
+    padding: 10px;
+    min-width: 120px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 15px;
+}
 .vehicle_detail_bottom_txt1{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .vehicle_detail_bottom_txt1 h5{
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    letter-spacing: -1.5%;
     color: var(--text-color);
 }
 .vehicle_detail_bottom_txt1 p{
     font-weight: 400;
     font-size: 17px;
     line-height: 30px;
-    letter-spacing: -1.5%;
     color: var(--text-color);
 }
 .vehicle_detail_bottom_txt2{
@@ -463,6 +587,13 @@ button{
     letter-spacing: -1.5%;
     color: var(--text-color);
 }
+@media (min-width: 576px) {
+    .vehicle_modal .modal-dialog {
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
 @media (max-width:992px){
     .hero_section .carousel-item img {
         width: 100%;
@@ -473,6 +604,15 @@ button{
     }
 }
 @media (max-width:576px){
+    .Vdetails_swiper_main .swiper-button-next, .swiper-button-prev {
+        height: 25px;
+        width: 25px;
+        border: none;
+        bottom: 40px;
+    }
+    .mySwiper2 .swiper-slide img{
+        height: 350px;
+    }
     .hero_section .carousel-item img {
         width: 100%;
         height: calc(100vh - 255px);
@@ -558,8 +698,23 @@ button{
         padding-top: 10px;
         text-align: center;
     }
+    .Vdetails_swiper_main .mySwiper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
 }
 @media (max-width:420px){
+    .Vdetails_swiper_main .mySwiper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+    }
+    .mySwiper2 .swiper-slide img{
+        height: 300px;
+    }
     .contact_img img {
         width: 100%;
         height: 350px;
